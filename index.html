@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spongeBob</title>
+	<style>
+		#background{ width: 100%;}
+		#friend{height: 300px; position: absolute; top: 400px; left: 450px;}
+		#sponge{height: 270px; position: absolute; top: 410px; left: 180px;}
+		#patrick{height: 240px; position: absolute; top: 400px; left: 800px;}
+	</style>
+</head>
+<body>
+	<img src="background.jpg" id="background">
+	
+	<img src="friend.png" id="friend">
+	<audio id="friendmMusic">
+		<source src="friendm.mp3" type="audio/mpeg">
+	</audio>
+
+	<img src="spongebob.png" id="sponge">
+	<audio id = "spongeMusic">
+		<source src="spongem.mp3" type="audio/mpeg">
+	</audio>
+
+	<img src="patrick1.png" id="patrick">
+	<audio id="patrickMusic">
+		<source src="patrick1.mp3" type="audio/mpeg">		
+	</audio>
+
+
+	<script type="text/javascript">
+		
+		var toggle = "off";
+
+		friend.onclick = function(){
+			if(toggle == "off"){
+				friend.setAttribute("src", "friend.png");
+				toggle = "on";
+				friendmMusic.play();
+			}else {
+				friend.setAttribute("src", "friend.png");
+				toggle = "off";
+				friendmMusic.pause();
+			}
+		}
+
+		sponge.onclick = function(){
+			if(toggle == "off"){
+				sponge.setAttribute("src", "spongebob2.png");
+				toggle = "on";
+				spongeMusic.play();
+			}else {
+				sponge.setAttribute("src", "spongebob.png");
+				toggle = "off";
+				spongeMusic.pause();
+			}
+		}
+
+		patrick.onclick = function(){
+			if (toggle == "off") {
+				patrick.setAttribute("src", "patrick2.png");
+				toggle = "on";
+				patrickMusic.play();
+			}else {
+				patrick.setAttribute("src", "patrick1.png");
+				toggle = "off";
+				patrickMusic.pause();
+			}
+		}
+
+
+
+
+	</script>
+
+
+</body>
+</html>
